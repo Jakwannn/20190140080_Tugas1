@@ -12,7 +12,7 @@ public: void cetak() {
 }
 };
 
-class Matakuliha {
+class Matakuliah {
 private:
     string kode;
     string namaM;
@@ -20,13 +20,24 @@ private:
 public:
     void input() {
         cout << "Masukkan Kode Matakuliah : ";
-
+        cin >> kode;
+        cout << "Masukkan Nama Matakuliah : ";
+        cin >> namaM;
+        cout << "Jumlah SKS : ";
+        cin >> sks;
+    }
+    void tampil() {
+        cout << "Kode Matakuliah : " << kode;
+        cout << "Nama Matakuliah : " << namaM;
+        cout << "SKS : " << sks;
     }
 };
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Mahasiswa mhs1;
+    Matakuliah mk;
+
 }
 
 
